@@ -4,7 +4,7 @@ def line(array)
   else
     message = "The line is currently:"
     array.each.with_index(1) do |name, i|
-      message << "#{i+1}. #{name}"
+      message << " #{i+1}. #{name}"
     end
     puts message
   end
