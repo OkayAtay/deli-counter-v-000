@@ -6,7 +6,6 @@ def line(array)
     array.each_with_index(1) do |name, i|
       message << "#{i+1}. #{name} "
     end
-  end
     puts message
   end
 end
