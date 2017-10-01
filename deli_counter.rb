@@ -4,6 +4,7 @@ def line(array)
   else
     message = "The line is currently: "
     new_array = array.each_with_index.collect{|name, i| message+= "#{i+1}. #{name}" }
+    puts new_array
   end
 end
 
