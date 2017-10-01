@@ -3,10 +3,10 @@ def line(array)
     puts "The line is currently empty."
   else
     message = "The line is currently:"
-    array.each_with_index()
-    do |name, i|
-    message << "#{i+1}. #{name} "
+    array.each_with_index(1) do |name, i|
+      message << "#{i+1}. #{name} "
     end
+  end
     puts message
   end
 end
