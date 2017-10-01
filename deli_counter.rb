@@ -3,7 +3,7 @@ def line(array)
     puts "The line is currently empty."
   else
     message = "The line is currently: "
-    new_array<<array.each_with_index{|name, i| message+= "#{i+1}. #{name}" }
+    array.each_with_index.collect{|name, i| message+= "#{i+1}. #{name}" }
     puts new_array
   end
 end
